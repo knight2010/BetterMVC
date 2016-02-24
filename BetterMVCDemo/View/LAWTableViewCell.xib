@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TestCell" id="KGk-i7-Jjw" customClass="LAWTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7R5-xG-sLp" userLabel="Create Date Label">
+                        <rect key="frame" x="8" y="21.5" width="249" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAd-QE-pVi">
+                        <rect key="frame" x="272" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="fln-aK-I3i"/>
+                            <constraint firstAttribute="width" constant="40" id="yj6-DY-hIh"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="unchecked"/>
+                        <state key="selected" image="checked"/>
+                        <connections>
+                            <action selector="check:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AAx-TC-CjC"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41m-ox-iNM" userLabel="Device Name Label">
+                        <rect key="frame" x="8" y="2" width="249" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nAd-QE-pVi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="D8q-Px-Bw5"/>
+                    <constraint firstAttribute="trailing" secondItem="nAd-QE-pVi" secondAttribute="trailing" constant="8" id="ExP-gM-a1k"/>
+                    <constraint firstItem="41m-ox-iNM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="HTi-hI-aAO"/>
+                    <constraint firstItem="7R5-xG-sLp" firstAttribute="top" secondItem="41m-ox-iNM" secondAttribute="bottom" constant="-1" id="IK9-pZ-A1U"/>
+                    <constraint firstItem="nAd-QE-pVi" firstAttribute="leading" secondItem="41m-ox-iNM" secondAttribute="trailing" constant="15" id="ZDL-c1-Jhc"/>
+                    <constraint firstItem="41m-ox-iNM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="iMd-LW-SAv"/>
+                    <constraint firstItem="7R5-xG-sLp" firstAttribute="trailing" secondItem="41m-ox-iNM" secondAttribute="trailing" id="t8d-jE-ZeS"/>
+                    <constraint firstItem="7R5-xG-sLp" firstAttribute="leading" secondItem="41m-ox-iNM" secondAttribute="leading" id="yTK-OF-n4e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkButton" destination="nAd-QE-pVi" id="l7W-Z5-wmM"/>
+                <outlet property="createDateLabel" destination="7R5-xG-sLp" id="5QM-r4-D58"/>
+                <outlet property="deviceNameLabel" destination="41m-ox-iNM" id="NIz-z8-9tB"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checked" width="94" height="94"/>
+        <image name="unchecked" width="96" height="96"/>
+    </resources>
+</document>

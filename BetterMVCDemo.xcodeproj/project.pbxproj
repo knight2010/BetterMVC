@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB2EFFB01C7A9FCC00CEC937 /* LAWTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2EFFAF1C7A9FCC00CEC937 /* LAWTableViewDataSource.m */; };
+		DB2EFFB41C7AFA6100CEC937 /* LAWTableDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2EFFB31C7AFA6100CEC937 /* LAWTableDataManager.m */; };
+		DBEE049A1C784A2A0062A3BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE04991C784A2A0062A3BE /* main.m */; };
+		DBEE049D1C784A2A0062A3BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE049C1C784A2A0062A3BE /* AppDelegate.m */; };
+		DBEE04A31C784A2A0062A3BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEE04A11C784A2A0062A3BE /* Main.storyboard */; };
+		DBEE04A51C784A2A0062A3BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBEE04A41C784A2A0062A3BE /* Assets.xcassets */; };
+		DBEE04A81C784A2A0062A3BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEE04A61C784A2A0062A3BE /* LaunchScreen.storyboard */; };
+		DBEE04B31C784A2A0062A3BE /* BetterMVCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE04B21C784A2A0062A3BE /* BetterMVCDemoTests.m */; };
+		DBEE04BF1C784F840062A3BE /* LAWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE04BE1C784F840062A3BE /* LAWViewController.m */; };
+		DBEE04C51C7852400062A3BE /* LAWTVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE04C41C7852400062A3BE /* LAWTVDevice.m */; };
+		DBEE04C91C78572B0062A3BE /* LAWTVDeviceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE04C81C78572B0062A3BE /* LAWTVDeviceViewModel.m */; };
+		DBEE04CD1C7861960062A3BE /* LAWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE04CB1C7861960062A3BE /* LAWTableViewCell.m */; };
+		DBEE04CE1C7861960062A3BE /* LAWTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBEE04CC1C7861960062A3BE /* LAWTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBEE04AF1C784A2A0062A3BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBEE048D1C784A2A0062A3BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBEE04941C784A2A0062A3BE;
+			remoteInfo = BetterMVCDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB2EFFAE1C7A9FCC00CEC937 /* LAWTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWTableViewDataSource.h; sourceTree = "<group>"; };
+		DB2EFFAF1C7A9FCC00CEC937 /* LAWTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWTableViewDataSource.m; sourceTree = "<group>"; };
+		DB2EFFB21C7AFA6100CEC937 /* LAWTableDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LAWTableDataManager.h; path = DataManager/LAWTableDataManager.h; sourceTree = "<group>"; };
+		DB2EFFB31C7AFA6100CEC937 /* LAWTableDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LAWTableDataManager.m; path = DataManager/LAWTableDataManager.m; sourceTree = "<group>"; };
+		DBEE04951C784A2A0062A3BE /* BetterMVCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterMVCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEE04991C784A2A0062A3BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBEE049B1C784A2A0062A3BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DBEE049C1C784A2A0062A3BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DBEE04A21C784A2A0062A3BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBEE04A41C784A2A0062A3BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBEE04A71C784A2A0062A3BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBEE04A91C784A2A0062A3BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEE04AE1C784A2A0062A3BE /* BetterMVCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterMVCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEE04B21C784A2A0062A3BE /* BetterMVCDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetterMVCDemoTests.m; sourceTree = "<group>"; };
+		DBEE04B41C784A2A0062A3BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEE04BD1C784F840062A3BE /* LAWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LAWViewController.h; path = Controller/LAWViewController.h; sourceTree = "<group>"; };
+		DBEE04BE1C784F840062A3BE /* LAWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LAWViewController.m; path = Controller/LAWViewController.m; sourceTree = "<group>"; };
+		DBEE04C31C7852400062A3BE /* LAWTVDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWTVDevice.h; sourceTree = "<group>"; };
+		DBEE04C41C7852400062A3BE /* LAWTVDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWTVDevice.m; sourceTree = "<group>"; };
+		DBEE04C71C78572B0062A3BE /* LAWTVDeviceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWTVDeviceViewModel.h; sourceTree = "<group>"; };
+		DBEE04C81C78572B0062A3BE /* LAWTVDeviceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWTVDeviceViewModel.m; sourceTree = "<group>"; };
+		DBEE04CA1C7861960062A3BE /* LAWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWTableViewCell.h; sourceTree = "<group>"; };
+		DBEE04CB1C7861960062A3BE /* LAWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWTableViewCell.m; sourceTree = "<group>"; };
+		DBEE04CC1C7861960062A3BE /* LAWTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAWTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBEE04921C784A2A0062A3BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEE04AB1C784A2A0062A3BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB2EFFAD1C7A9FA000CEC937 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				DB2EFFAE1C7A9FCC00CEC937 /* LAWTableViewDataSource.h */,
+				DB2EFFAF1C7A9FCC00CEC937 /* LAWTableViewDataSource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		DB2EFFB11C7AFA4400CEC937 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				DB2EFFB21C7AFA6100CEC937 /* LAWTableDataManager.h */,
+				DB2EFFB31C7AFA6100CEC937 /* LAWTableDataManager.m */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		DBEE048C1C784A2A0062A3BE = {
+			isa = PBXGroup;
+			children = (
+				DBEE04971C784A2A0062A3BE /* BetterMVCDemo */,
+				DBEE04B11C784A2A0062A3BE /* BetterMVCDemoTests */,
+				DBEE04961C784A2A0062A3BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBEE04961C784A2A0062A3BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE04951C784A2A0062A3BE /* BetterMVCDemo.app */,
+				DBEE04AE1C784A2A0062A3BE /* BetterMVCDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBEE04971C784A2A0062A3BE /* BetterMVCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DB2EFFB11C7AFA4400CEC937 /* DataManager */,
+				DB2EFFAD1C7A9FA000CEC937 /* DataSource */,
+				DBEE04C11C784FB60062A3BE /* Model */,
+				DBEE04C61C7857160062A3BE /* ViewModel */,
+				DBEE04C21C784FD40062A3BE /* View */,
+				DBEE04C01C784F880062A3BE /* Controller */,
+				DBEE04A41C784A2A0062A3BE /* Assets.xcassets */,
+				DBEE04981C784A2A0062A3BE /* Supporting Files */,
+			);
+			path = BetterMVCDemo;
+			sourceTree = "<group>";
+		};
+		DBEE04981C784A2A0062A3BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE04A91C784A2A0062A3BE /* Info.plist */,
+				DBEE04A61C784A2A0062A3BE /* LaunchScreen.storyboard */,
+				DBEE049B1C784A2A0062A3BE /* AppDelegate.h */,
+				DBEE049C1C784A2A0062A3BE /* AppDelegate.m */,
+				DBEE04991C784A2A0062A3BE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBEE04B11C784A2A0062A3BE /* BetterMVCDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE04B21C784A2A0062A3BE /* BetterMVCDemoTests.m */,
+				DBEE04B41C784A2A0062A3BE /* Info.plist */,
+			);
+			path = BetterMVCDemoTests;
+			sourceTree = "<group>";
+		};
+		DBEE04C01C784F880062A3BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE04BD1C784F840062A3BE /* LAWViewController.h */,
+				DBEE04BE1C784F840062A3BE /* LAWViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DBEE04C11C784FB60062A3BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE04C31C7852400062A3BE /* LAWTVDevice.h */,
+				DBEE04C41C7852400062A3BE /* LAWTVDevice.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBEE04C21C784FD40062A3BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE04A11C784A2A0062A3BE /* Main.storyboard */,
+				DBEE04CA1C7861960062A3BE /* LAWTableViewCell.h */,
+				DBEE04CB1C7861960062A3BE /* LAWTableViewCell.m */,
+				DBEE04CC1C7861960062A3BE /* LAWTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBEE04C61C7857160062A3BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE04C71C78572B0062A3BE /* LAWTVDeviceViewModel.h */,
+				DBEE04C81C78572B0062A3BE /* LAWTVDeviceViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBEE04941C784A2A0062A3BE /* BetterMVCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBEE04B71C784A2A0062A3BE /* Build configuration list for PBXNativeTarget "BetterMVCDemo" */;
+			buildPhases = (
+				DBEE04911C784A2A0062A3BE /* Sources */,
+				DBEE04921C784A2A0062A3BE /* Frameworks */,
+				DBEE04931C784A2A0062A3BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetterMVCDemo;
+			productName = BetterMVCDemo;
+			productReference = DBEE04951C784A2A0062A3BE /* BetterMVCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBEE04AD1C784A2A0062A3BE /* BetterMVCDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBEE04BA1C784A2A0062A3BE /* Build configuration list for PBXNativeTarget "BetterMVCDemoTests" */;
+			buildPhases = (
+				DBEE04AA1C784A2A0062A3BE /* Sources */,
+				DBEE04AB1C784A2A0062A3BE /* Frameworks */,
+				DBEE04AC1C784A2A0062A3BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBEE04B01C784A2A0062A3BE /* PBXTargetDependency */,
+			);
+			name = BetterMVCDemoTests;
+			productName = BetterMVCDemoTests;
+			productReference = DBEE04AE1C784A2A0062A3BE /* BetterMVCDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBEE048D1C784A2A0062A3BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LAW;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = lancewer;
+				TargetAttributes = {
+					DBEE04941C784A2A0062A3BE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					DBEE04AD1C784A2A0062A3BE = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = DBEE04941C784A2A0062A3BE;
+					};
+				};
+			};
+			buildConfigurationList = DBEE04901C784A2A0062A3BE /* Build configuration list for PBXProject "BetterMVCDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBEE048C1C784A2A0062A3BE;
+			productRefGroup = DBEE04961C784A2A0062A3BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBEE04941C784A2A0062A3BE /* BetterMVCDemo */,
+				DBEE04AD1C784A2A0062A3BE /* BetterMVCDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBEE04931C784A2A0062A3BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEE04CE1C7861960062A3BE /* LAWTableViewCell.xib in Resources */,
+				DBEE04A81C784A2A0062A3BE /* LaunchScreen.storyboard in Resources */,
+				DBEE04A51C784A2A0062A3BE /* Assets.xcassets in Resources */,
+				DBEE04A31C784A2A0062A3BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEE04AC1C784A2A0062A3BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBEE04911C784A2A0062A3BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEE049D1C784A2A0062A3BE /* AppDelegate.m in Sources */,
+				DB2EFFB41C7AFA6100CEC937 /* LAWTableDataManager.m in Sources */,
+				DBEE04C91C78572B0062A3BE /* LAWTVDeviceViewModel.m in Sources */,
+				DBEE04CD1C7861960062A3BE /* LAWTableViewCell.m in Sources */,
+				DBEE049A1C784A2A0062A3BE /* main.m in Sources */,
+				DB2EFFB01C7A9FCC00CEC937 /* LAWTableViewDataSource.m in Sources */,
+				DBEE04C51C7852400062A3BE /* LAWTVDevice.m in Sources */,
+				DBEE04BF1C784F840062A3BE /* LAWViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEE04AA1C784A2A0062A3BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEE04B31C784A2A0062A3BE /* BetterMVCDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBEE04B01C784A2A0062A3BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBEE04941C784A2A0062A3BE /* BetterMVCDemo */;
+			targetProxy = DBEE04AF1C784A2A0062A3BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBEE04A11C784A2A0062A3BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBEE04A21C784A2A0062A3BE /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DBEE04A61C784A2A0062A3BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBEE04A71C784A2A0062A3BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBEE04B51C784A2A0062A3BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBEE04B61C784A2A0062A3BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBEE04B81C784A2A0062A3BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BetterMVCDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lancewer.BetterMVCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DBEE04B91C784A2A0062A3BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BetterMVCDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lancewer.BetterMVCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DBEE04BB1C784A2A0062A3BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BetterMVCDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lancewer.BetterMVCDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetterMVCDemo.app/BetterMVCDemo";
+			};
+			name = Debug;
+		};
+		DBEE04BC1C784A2A0062A3BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BetterMVCDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lancewer.BetterMVCDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetterMVCDemo.app/BetterMVCDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBEE04901C784A2A0062A3BE /* Build configuration list for PBXProject "BetterMVCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEE04B51C784A2A0062A3BE /* Debug */,
+				DBEE04B61C784A2A0062A3BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBEE04B71C784A2A0062A3BE /* Build configuration list for PBXNativeTarget "BetterMVCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEE04B81C784A2A0062A3BE /* Debug */,
+				DBEE04B91C784A2A0062A3BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBEE04BA1C784A2A0062A3BE /* Build configuration list for PBXNativeTarget "BetterMVCDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEE04BB1C784A2A0062A3BE /* Debug */,
+				DBEE04BC1C784A2A0062A3BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBEE048D1C784A2A0062A3BE /* Project object */;
+}
