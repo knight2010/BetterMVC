@@ -26,7 +26,7 @@ static NSString *const CELL_ID = @"TestCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"LAWTableViewCell" bundle:nil] forCellReuseIdentifier:CELL_ID];
     
     __weak LAWViewController *weakSelf = self;
@@ -43,6 +43,9 @@ static NSString *const CELL_ID = @"TestCell";
     self.tableView.dataSource = self.tableDataSource;
     
     self.dataManager = [[LAWTableDataManager alloc] init];
+    /**
+     *  处理网络请求使用block回调是一种不错的方式
+     */
     [self.dataManager requestDataWithParam:@{} success:^(NSArray *data) {
         [self.tableDataSource setData:data];
         [self.tableView reloadData];
@@ -53,7 +56,6 @@ static NSString *const CELL_ID = @"TestCell";
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - UITableViewDelegate

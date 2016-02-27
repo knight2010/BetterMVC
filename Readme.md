@@ -17,4 +17,8 @@ http://objccn.io/issue-13-1/
 
 ## GO-swift 敏创团队
 
-敏捷创意团队，请访问(点击)[http://www.go-swift.net]
+敏捷创意团队，请访问![点击](http://www.go-swift.net)
+
+## 长按关注微信号
+![alt 敏创团队](qcord.jpg "敏创团队goswift")
+

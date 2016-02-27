@@ -47,6 +47,7 @@
     return TVDevices.count;
 }
 
+//有一个优点，ds与cell分离，这样不会暴露cell, 也就可以适配多种cell
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     id cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
     id item = [self itemAtIndexPath:indexPath];
