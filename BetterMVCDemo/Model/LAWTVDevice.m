@@ -15,6 +15,8 @@
         _deviceID = [deviceInfoDic[@"ID"] integerValue];
         _deviceModel = deviceInfoDic[@"Model"];
         _createDate = deviceInfoDic[@"Date"];
+        _cellType   = [deviceInfoDic[@"type"] integerValue];
+        _deviceDescription = deviceInfoDic[@"description"];
     }
     
     return self;

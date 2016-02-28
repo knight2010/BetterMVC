@@ -12,6 +12,7 @@
     NSArray *TVDevices;
     NSString *cellID;
     ConfigureCell configureCell;
+    ConfigureMultiCell multiCell;
 }
 @end
 
@@ -30,6 +31,16 @@
 
 - (instancetype)initWithCellIdentifier:(NSString *)cellIdentifier configureCellBlock:(ConfigureCell)configureCellBlock {
     return  [self initWithItems:@[] cellIdentifier:cellIdentifier configureCellBlock:configureCellBlock];
+}
+
+- (instancetype)initconfigureCellBlock:(ConfigureMultiCell)configMultiCellBlock {
+    
+    if (self) {
+        TVDevices = nil;
+        multiCell = configMultiCellBlock;
+    }
+    
+    return self;
 }
 
 #pragma mark - Public Method

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D10149A61C82BD7D00A2F406 /* SPTVDeviceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D10149A51C82BD7D00A2F406 /* SPTVDeviceViewModel.m */; };
+		D10149AA1C82C10300A2F406 /* SPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D10149A81C82C10300A2F406 /* SPTableViewCell.m */; };
+		D10149AB1C82C10300A2F406 /* SPTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10149A91C82C10300A2F406 /* SPTableViewCell.xib */; };
 		DB2EFFB01C7A9FCC00CEC937 /* LAWTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2EFFAF1C7A9FCC00CEC937 /* LAWTableViewDataSource.m */; };
 		DB2EFFB41C7AFA6100CEC937 /* LAWTableDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2EFFB31C7AFA6100CEC937 /* LAWTableDataManager.m */; };
 		DBEE049A1C784A2A0062A3BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE04991C784A2A0062A3BE /* main.m */; };
@@ -33,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D10149A41C82BD7D00A2F406 /* SPTVDeviceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTVDeviceViewModel.h; sourceTree = "<group>"; };
+		D10149A51C82BD7D00A2F406 /* SPTVDeviceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTVDeviceViewModel.m; sourceTree = "<group>"; };
+		D10149A71C82C10300A2F406 /* SPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTableViewCell.h; sourceTree = "<group>"; };
+		D10149A81C82C10300A2F406 /* SPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTableViewCell.m; sourceTree = "<group>"; };
+		D10149A91C82C10300A2F406 /* SPTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTableViewCell.xib; sourceTree = "<group>"; };
 		DB2EFFAE1C7A9FCC00CEC937 /* LAWTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWTableViewDataSource.h; sourceTree = "<group>"; };
 		DB2EFFAF1C7A9FCC00CEC937 /* LAWTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWTableViewDataSource.m; sourceTree = "<group>"; };
 		DB2EFFB21C7AFA6100CEC937 /* LAWTableDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LAWTableDataManager.h; path = DataManager/LAWTableDataManager.h; sourceTree = "<group>"; };
@@ -174,6 +182,9 @@
 				DBEE04CA1C7861960062A3BE /* LAWTableViewCell.h */,
 				DBEE04CB1C7861960062A3BE /* LAWTableViewCell.m */,
 				DBEE04CC1C7861960062A3BE /* LAWTableViewCell.xib */,
+				D10149A71C82C10300A2F406 /* SPTableViewCell.h */,
+				D10149A81C82C10300A2F406 /* SPTableViewCell.m */,
+				D10149A91C82C10300A2F406 /* SPTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +194,8 @@
 			children = (
 				DBEE04C71C78572B0062A3BE /* LAWTVDeviceViewModel.h */,
 				DBEE04C81C78572B0062A3BE /* LAWTVDeviceViewModel.m */,
+				D10149A41C82BD7D00A2F406 /* SPTVDeviceViewModel.h */,
+				D10149A51C82BD7D00A2F406 /* SPTVDeviceViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -271,6 +284,7 @@
 				DBEE04CE1C7861960062A3BE /* LAWTableViewCell.xib in Resources */,
 				DBEE04A81C784A2A0062A3BE /* LaunchScreen.storyboard in Resources */,
 				DBEE04A51C784A2A0062A3BE /* Assets.xcassets in Resources */,
+				D10149AB1C82C10300A2F406 /* SPTableViewCell.xib in Resources */,
 				DBEE04A31C784A2A0062A3BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,10 +307,12 @@
 				DB2EFFB41C7AFA6100CEC937 /* LAWTableDataManager.m in Sources */,
 				DBEE04C91C78572B0062A3BE /* LAWTVDeviceViewModel.m in Sources */,
 				DBEE04CD1C7861960062A3BE /* LAWTableViewCell.m in Sources */,
+				D10149AA1C82C10300A2F406 /* SPTableViewCell.m in Sources */,
 				DBEE049A1C784A2A0062A3BE /* main.m in Sources */,
 				DB2EFFB01C7A9FCC00CEC937 /* LAWTableViewDataSource.m in Sources */,
 				DBEE04C51C7852400062A3BE /* LAWTVDevice.m in Sources */,
 				DBEE04BF1C784F840062A3BE /* LAWViewController.m in Sources */,
+				D10149A61C82BD7D00A2F406 /* SPTVDeviceViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +445,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lancewer.BetterMVCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -440,6 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lancewer.BetterMVCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "";
 			};
 			name = Release;
 		};

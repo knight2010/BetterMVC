@@ -8,6 +8,7 @@
 
 #import "LAWTableDataManager.h"
 #import "LAWTVDevice.h"
+#import "SPTVDeviceViewModel.h"
 #import "LAWTVDeviceViewModel.h"
 
 @implementation LAWTableDataManager
@@ -27,8 +28,9 @@
 - (NSArray *)createFakeData {
     NSMutableArray *testArrary = [NSMutableArray array];
     for (int i = 0; i< 30 ; i++) {
+        //NSInteger typeNum = i % 2 == 1?@1:@2;
         NSString *modelStr = [NSString stringWithFormat:@"CHiQ-%@", @(i)];
-        [testArrary addObject:@{@"ID":@(i), @"Model": modelStr, @"Date":[NSDate date]}];
+        [testArrary addObject:@{@"ID":@(i), @"Model": modelStr, @"Date":[NSDate date] ,@"description":modelStr , @"type":@(2)}];
     }
     return [testArrary copy];
 }
@@ -37,8 +39,16 @@
     NSMutableArray *resultArray = [NSMutableArray array];
     [rawInfo enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         LAWTVDevice *device = [[LAWTVDevice alloc] initWithDictionary:obj];
-        LAWTVDeviceViewModel *deviceModel = [[LAWTVDeviceViewModel alloc] initWithTVDevice:device];
-        [resultArray addObject:deviceModel];
+        //关键 分配不同的viewmodel
+        if (device.cellType == TypeFirst) {
+            LAWTVDeviceViewModel *deviceModel = [[LAWTVDeviceViewModel alloc] initWithTVDevice:device];
+            [resultArray addObject:deviceModel];
+        }else if (device.cellType == TypeSecond) {
+            SPTVDeviceViewModel *deviceModel = [[SPTVDeviceViewModel alloc] initWithTVDevice:device];
+            [resultArray addObject:deviceModel];
+        }
+        
+        
     }];
     
     return [resultArray copy];
