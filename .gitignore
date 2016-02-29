@@ -1,0 +1,4 @@
+#.gitignore
+#忽略
+/Pods
+Podfile.lock
