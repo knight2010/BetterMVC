@@ -14,7 +14,7 @@
 #import "SPTVDeviceViewModel.h"
 #import "LAWTableDataManager.h"
 
-static NSString *const CELL_ID = @"TestCell";
+static NSString *const CELL_ID = @"LAWTableViewCell";
 static NSString *const CELL_SP_ID = @"SPTableViewCell";
 
 
@@ -23,7 +23,6 @@ static NSString *const CELL_SP_ID = @"SPTableViewCell";
 @property (nonatomic, strong) LAWTableViewDataSource *tableDataSource;
 @property (nonatomic, strong) LAWTableDataManager *dataManager;
 @property (nonatomic, copy) ConfigureCell configureCell;
-@property (nonatomic, copy) ConfigureMultiCell configMultiCell;
 @end
 
 @implementation LAWViewController
@@ -57,7 +56,7 @@ static NSString *const CELL_SP_ID = @"SPTableViewCell";
     };
     
     //如何处理 不同的dataSource里面的不同reuseid
-    self.tableDataSource = [[LAWTableViewDataSource alloc] initWithIdentifyDic:@{@"LAWTableViewCell":@"LAWTVDeviceViewModel",@"SPTableViewCell":@"SPTVDeviceViewModel"} configureCellBlock:self.configureCell];
+    self.tableDataSource = [[LAWTableViewDataSource alloc] initWithIdentifyDic:@{CELL_ID:@"LAWTVDeviceViewModel",CELL_SP_ID:@"SPTVDeviceViewModel"} configureCellBlock:self.configureCell];
     self.tableView.dataSource = self.tableDataSource;
     
     self.dataManager = [[LAWTableDataManager alloc] init];

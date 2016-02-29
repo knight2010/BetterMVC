@@ -28,7 +28,7 @@
 - (NSArray *)createFakeData {
     NSMutableArray *testArrary = [NSMutableArray array];
     for (int i = 0; i< 30 ; i++) {
-        //NSInteger typeNum = i % 2 == 1?@1:@2;
+        NSNumber * type = i % 2 == 1 ? @1:@2;
         NSString *modelStr = [NSString stringWithFormat:@"CHiQ-%@", @(i)];
         [testArrary addObject:@{@"ID":@(i), @"Model": modelStr, @"Date":[NSDate date] ,@"description":modelStr , @"type":@(2)}];
     }
