@@ -13,7 +13,6 @@
     NSArray *TVDevices;
     NSString *cellID;
     ConfigureCell configureCell;
-    ConfigureMultiCell multiCell;
     NSDictionary *  identiDic;
 }
 @end
@@ -26,18 +25,6 @@
         TVDevices = items;
         cellID = cellIdentifier;
         configureCell = configureCellBlock;
-    }
-    
-    return self;
-}
-
-- (instancetype)initWithItems:(NSArray *)items configureCellBlock:(ConfigureMultiCell)configureCellBlock {
-
-    self = [super init];
-    if (self) {
-        TVDevices = items;
-        multiCell = configureCellBlock;
-        identiDic = nil;
     }
     
     return self;
@@ -56,11 +43,6 @@
 
 - (instancetype)initWithCellIdentifier:(NSString *)cellIdentifier configureCellBlock:(ConfigureCell)configureCellBlock {
     return  [self initWithItems:@[] cellIdentifier:cellIdentifier configureCellBlock:configureCellBlock];
-}
-
-- (instancetype)initconfigureCellBlock:(ConfigureMultiCell)configMultiCellBlock {
-    
-    return  [self initWithItems:@[] configureCellBlock:configMultiCellBlock];
 }
 
 - (instancetype)initWithIdentifyDic:(NSDictionary *)identifierDic configureCellBlock:(ConfigureCell)configureCellBlock {

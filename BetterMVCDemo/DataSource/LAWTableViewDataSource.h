@@ -11,19 +11,13 @@
 
 typedef void(^ConfigureCell) (UITableViewCell *, id);
 
-typedef void(^ConfigureMultiCell) (NSIndexPath *, id);
-
 @interface LAWTableViewDataSource : NSObject<UITableViewDataSource>
 
 - (instancetype)initWithItems:(NSArray *)items cellIdentifier:(NSString *)cellIdentifier configureCellBlock:(ConfigureCell)configureCellBlock;
 
-- (instancetype)initWithItems:(NSArray *)items configureCellBlock:(ConfigureMultiCell)configureCellBlock;
-
 - (instancetype)initWithIdentifyDic:(NSDictionary *)identifierDic configureCellBlock:(ConfigureCell)configureCellBlock;
 
 - (instancetype)initWithCellIdentifier:(NSString *)cellIdentifier configureCellBlock:(ConfigureCell)configureCellBlock;
-
-- (instancetype)initconfigureCellBlock:(ConfigureMultiCell)configMultiCellBlock;
 
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath;
 - (void)setData:(NSArray *)data;
