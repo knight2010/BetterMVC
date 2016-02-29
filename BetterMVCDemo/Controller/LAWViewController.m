@@ -37,17 +37,16 @@ static NSString *const CELL_SP_ID = @"SPTableViewCell";
     
     __weak LAWViewController *weakSelf = self;
     self.configureCell = ^(UITableViewCell *cell, id item) {
-        NSIndexPath * indexPath;
         //判断item是属于哪一种类型
         if ([item isKindOfClass:[LAWTVDeviceViewModel class]]) {
-            LAWTableViewCell *tableCell = [weakSelf.tableView dequeueReusableCellWithIdentifier:CELL_ID forIndexPath:indexPath];
+            LAWTableViewCell *tableCell = (LAWTableViewCell *)cell;
             LAWTVDeviceViewModel *deviceModel = (LAWTVDeviceViewModel *)item;
             tableCell.deviceNameLabel.text = deviceModel.deviceName;
             tableCell.createDateLabel.text = deviceModel.createDate;
             tableCell.checked = deviceModel.isChecked;
             tableCell.delegate = weakSelf;
         }else if ([item isKindOfClass:[SPTVDeviceViewModel class]]) {
-            SPTableViewCell *tableCell = [weakSelf.tableView dequeueReusableCellWithIdentifier:CELL_SP_ID forIndexPath:indexPath];
+            SPTableViewCell *tableCell = (SPTableViewCell *)cell;
             SPTVDeviceViewModel *deviceModel = (SPTVDeviceViewModel *)item;
             tableCell.nameLabel.text = deviceModel.deviceName;
             tableCell.descLabel.text = deviceModel.deviceDescription;
@@ -57,27 +56,8 @@ static NSString *const CELL_SP_ID = @"SPTableViewCell";
         }
     };
     
-    self.configMultiCell = ^(NSIndexPath * indexPath, id item) {
-        
-        if ([item isKindOfClass:[LAWTVDeviceViewModel class]]) {
-            LAWTableViewCell *tableCell = [weakSelf.tableView dequeueReusableCellWithIdentifier:CELL_ID forIndexPath:indexPath];
-            LAWTVDeviceViewModel *deviceModel = (LAWTVDeviceViewModel *)item;
-            tableCell.deviceNameLabel.text = deviceModel.deviceName;
-            tableCell.createDateLabel.text = deviceModel.createDate;
-            tableCell.checked = deviceModel.isChecked;
-            tableCell.delegate = weakSelf;
-        }else if ([item isKindOfClass:[SPTVDeviceViewModel class]]) {
-            SPTableViewCell *tableCell = [weakSelf.tableView dequeueReusableCellWithIdentifier:CELL_SP_ID forIndexPath:indexPath];
-            SPTVDeviceViewModel *deviceModel = (SPTVDeviceViewModel *)item;
-            tableCell.nameLabel.text = deviceModel.deviceName;
-            tableCell.descLabel.text = deviceModel.deviceDescription;
-            //tableCell.delegate = weakSelf;
-        }else {
-            NSLog(@"其他情况");
-        }
-    };
     //如何处理 不同的dataSource里面的不同reuseid
-    self.tableDataSource = [[LAWTableViewDataSource alloc] initWithCellIdentifier:CELL_ID configureCellBlock:self.configureCell];
+    self.tableDataSource = [[LAWTableViewDataSource alloc] initWithIdentifyDic:@{@"LAWTableViewCell":@"LAWTVDeviceViewModel",@"SPTableViewCell":@"SPTVDeviceViewModel"} configureCellBlock:self.configureCell];
     self.tableView.dataSource = self.tableDataSource;
     
     self.dataManager = [[LAWTableDataManager alloc] init];
