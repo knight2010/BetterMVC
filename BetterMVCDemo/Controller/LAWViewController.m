@@ -14,7 +14,7 @@
 #import "SPTVDeviceViewModel.h"
 #import "LAWTableDataManager.h"
 
-static NSString *const CELL_ID = @"TestCell";
+static NSString *const CELL_ID = @"LAWTableViewCell";
 static NSString *const CELL_SP_ID = @"SPTableViewCell";
 
 
