@@ -14,7 +14,7 @@
 #import "SPTVDeviceViewModel.h"
 #import "LAWTableDataManager.h"
 
-static NSString *const CELL_ID = @"LAWTableViewCell";
+static NSString *const CELL_ID = @"TestCell";
 static NSString *const CELL_SP_ID = @"SPTableViewCell";
 
 
@@ -30,9 +30,10 @@ static NSString *const CELL_SP_ID = @"SPTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"LAWTableViewCell" bundle:nil] forCellReuseIdentifier:CELL_ID];
     
     [self.tableView registerNib:[UINib nibWithNibName:@"SPTableViewCell" bundle:nil] forCellReuseIdentifier:CELL_SP_ID];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"LAWTableViewCell" bundle:nil] forCellReuseIdentifier:CELL_ID];
     
     __weak LAWViewController *weakSelf = self;
     self.configureCell = ^(UITableViewCell *cell, id item) {

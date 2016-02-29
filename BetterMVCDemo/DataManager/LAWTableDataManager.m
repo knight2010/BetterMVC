@@ -30,7 +30,7 @@
     for (int i = 0; i< 30 ; i++) {
         NSNumber * type = i % 2 == 1 ? @1:@2;
         NSString *modelStr = [NSString stringWithFormat:@"CHiQ-%@", @(i)];
-        [testArrary addObject:@{@"ID":@(i), @"Model": modelStr, @"Date":[NSDate date] ,@"description":modelStr , @"type":@(2)}];
+        [testArrary addObject:@{@"ID":@(i), @"Model": modelStr, @"Date":[NSDate date] ,@"description":modelStr , @"type":type}];
     }
     return [testArrary copy];
 }
