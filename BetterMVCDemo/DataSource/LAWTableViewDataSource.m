@@ -84,6 +84,7 @@
         NSLog (@"Key: %@ for value: %@", key, value);
         if ([item isKindOfClass:NSClassFromString(value)]) {
             cell = [tableView dequeueReusableCellWithIdentifier:key forIndexPath:indexPath];
+            break;
         }
     }
     
